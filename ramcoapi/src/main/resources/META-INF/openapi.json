@@ -1,0 +1,61 @@
+{
+    "openapi": "3.0.2",
+    "info": {
+        "title": "sampleApi",
+        "version": "1.0.0",
+        "description": "My first API"
+    },
+    "paths": {
+        "/whoami": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "string"
+                                },
+                                "examples": {
+                                    "sampleEg": {
+                                        "value": {
+                                            "name": "Rohit",
+                                            "age": 21,
+                                            "nationality": "Indian",
+                                            "passion": "appDev"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "description": "sampleDesc\n"
+                    }
+                },
+                "summary": "Gets details about me"
+            }
+        }
+    },
+    "components": {
+        "responses": {
+            "mydetails": {
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "type": "string"
+                        },
+                        "examples": {
+                            "mydetails": {
+                                "value": {
+                                    "name": "Rohit",
+                                    "age": 21,
+                                    "nationality": "Indian",
+                                    "passion": "appDev"
+                                }
+                            }
+                        }
+                    }
+                },
+                "description": "{\n    \"name\":\"Rohit\",\n    \"age\":21,\n    \"nationality\":\"Indian\",\n    \"passion\":\"appDev\"\n}"
+            }
+        }
+    }
+}
